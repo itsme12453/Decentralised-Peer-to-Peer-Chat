@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Chat App</title>
+</head>
+<body>
+    <button id="close-connection" onclick="closeConnection()">Close Connection</button>
+
+    <div id="messages">
+    </div>
+    
+    <form onsubmit="handleSubmit(event)">
+        <label for="message">Message:</label><br>
+        <input type="text" id="message" name="message"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- <script src="https://cdn.socket.io/4.7.4/socket.io.min.js" integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
